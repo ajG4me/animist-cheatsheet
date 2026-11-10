@@ -292,6 +292,20 @@ button.chip .primary-mark{margin-left:4px}
  .height-panel{justify-self:end;width:min(100%,320px)}
 }
 [hidden].rank,[hidden].sline,[hidden].chips{display:none}
+
+/* Community license information: unobtrusive until expanded. */
+.site-credits{max-width:1240px;margin:0 auto;padding:4px 16px 28px;color:var(--mute);font-size:.79rem;line-height:1.55}
+.site-credits details{border-top:1px solid #444;padding:8px 0}
+.site-credits summary{cursor:pointer;display:inline-flex;align-items:center;gap:7px;color:var(--tan);font-weight:700;font-variant:small-caps;letter-spacing:.03em;list-style:revert}
+.site-credits summary:hover{color:var(--gold)}
+.site-credits .credits-body{max-width:880px;padding:11px 4px 2px}
+.site-credits .credits-body p{margin:0 0 10px}
+.site-credits .credits-body h2{color:var(--gold);font-size:.88rem;line-height:1.3;margin:14px 0 5px;font-variant:small-caps}
+.site-credits .credits-body h2:first-child{margin-top:0}
+.site-credits .credits-body a{color:var(--gold);overflow-wrap:anywhere}
+.site-credits .credits-body ul{margin:0 0 12px;padding-left:20px}
+.site-credits .credits-body li{margin:0 0 7px}
+.site-credits .smallprint{color:#aaa;font-size:.74rem}
 </style>
 </head>
 <body class="sidemode">
@@ -318,6 +332,40 @@ button.chip .primary-mark{margin-left:4px}
 <div id="wrap"><nav id="nav" aria-label="Apparitions"></nav><div id="list"></div></div>
 <div class="empty" hidden="" id="none-found">No apparition matches the search.</div>
 </main>
+
+<footer class="site-credits" aria-label="Legal information and credits">
+  <details id="licenses-and-credits">
+    <summary>Licenses &amp; Credits</summary>
+    <div class="credits-body">
+      <h2>Paizo Community Use Policy</h2>
+      <p>Animist Cheatsheet uses trademarks and/or copyrights owned by Paizo Inc., used under
+        <a href="https://paizo.com/licenses/communityuse" target="_blank" rel="noopener noreferrer">Paizo's Community Use Policy</a>.
+        We are expressly prohibited from charging you to use or access this content.
+        Animist Cheatsheet is not published, endorsed, or specifically approved by Paizo.
+        For more information about Paizo Inc. and Paizo products, visit
+        <a href="https://paizo.com" target="_blank" rel="noopener noreferrer">paizo.com</a>.</p>
+      <h2>ORC License &amp; rulebook credits</h2>
+      <p><strong>ORC Notice:</strong> This product is licensed under the ORC License located at the Library of Congress at TX 9-307-067 and available online at various locations, including
+        <a href="https://paizo.com/orclicense" target="_blank" rel="noopener noreferrer">paizo.com/orclicense</a>.
+        All warranties are disclaimed as set forth therein.</p>
+      <p><strong>Attribution:</strong> The game rules and mechanics in this unofficial reference are based on licensed Pathfinder Second Edition material published by Paizo Inc., including:</p>
+      <ul>
+        <li><strong>Pathfinder War of Immortals</strong> © 2024 Paizo Inc. Authors: James Case, Liane Merciel, and Michael Sayre. Additional writing by Jessica Catalan, Matt Chapmond, Steven Hammond, Steven T. Helt, Brent Holtsberry, Jason Keeley, Michelle Y. Kim, Luis Loza, Erik Mona, AJ Neuro, Joaquin Kyle “Makapatag” Saavedra, Tony Saunders, Andrew Stoeckle, Greg A. Vaughan, and Ruvaid Virk.</li>
+        <li><strong>Pathfinder Player Core</strong> © 2023 Paizo Inc. Designed by Logan Bonner, Jason Bulmahn, Stephen Radney-MacFarland, and Mark Seifter. Authors: Alexander Augunas, Kate Baker, Logan Bonner, Jason Bulmahn, Carlos Cabrera, Calder CaDavid, James Case, Eleanor Ferron, Steven Hammond, Joan Hong, Vanessa Hoskins, James Jacobs, Jenny Jarzabski, Erik Keith, Dustin Knight, Lyz Liddell, Luis Loza, Patchen Mortimer, Dennis Muldoon, Stephen Radney-MacFarland, Mikhail Rekun, David N. Ross, Michael Sayre, Mark Seifter, Kendra Leigh Speedling, Mark Thompson, Clark Valentine, Andrew White, Landon Winkler, and Linda Zayas-Palmer.</li>
+        <li><strong>Pathfinder Player Core 2</strong> © 2024 Paizo Inc. Authors: Amirali Attar Olyaee, Alexander Augunas, Brian Bauman, Joshua Birdsong, Logan Bonner, Jason Bulmahn, James Case, Jessica Catalan, John Compton, Paris Crenshaw, Jesse Decker, Eleanor Ferron, Fabby Garza Marroquín, Steven Hammond, Sasha Laranoa Harving, Joan Hong, Nicolas Hornyak, Vanessa Hoskins, James Jacobs, Jason Keeley, Dustin Knight, Avi Kool, Lyz Liddell, Nicolas Logue, Luis Loza, Ron Lundeen, Patchen Mortimer, Stephen Radney-MacFarland, Jessica Redekop, Mikhail Rekun, Alex Riggs, David N. Ross, Michael Sayre, Mark Seifter, Owen K.C. Stephens, Jason Tondro, Clark Valentine, Andrew White, Landon Winkler, and Tonya Woldridge.</li>
+      </ul>
+      <p><strong>Reserved Material:</strong> Paizo's trademarks, proper names, setting lore, characters, illustrations, logos, and other Reserved Material remain the property of their respective owners and are not licensed under the ORC License by this website.</p>
+      <p><strong>Expressly Designated Licensed Material:</strong> None beyond the game mechanics treated as Licensed Material under the ORC License.</p>
+      <p class="smallprint">Pathfinder and associated trademarks are the property of Paizo Inc. All rights reserved. The attribution above covers the principal rulebooks identified for this guide; spell-by-spell source and artwork licensing still require independent verification.</p>
+      <h2>Other credits &amp; contact</h2>
+      <p>Rules references: <a href="https://2e.aonprd.com/" target="_blank" rel="noopener noreferrer">Archives of Nethys</a> (independent Pathfinder rules reference).
+        The embedded <em>IM Fell English</em> font is licensed under the SIL Open Font License 1.1; the license text is preserved in the HTML source.</p>
+      <p>Cheatsheet maintained by <strong>ajG4me</strong>. For questions, corrections, or copyright concerns, please use
+        <a href="https://github.com/ajG4me/animist-cheatsheet/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a>.</p>
+    </div>
+  </details>
+</footer>
+
 <script>
 // [apparition, focus, [lore1, lore2], cantrip, [ranks 1-9], avatar, speeds, melee, ranged]
 var D=[
@@ -684,31 +732,18 @@ function primaryControls(A,P){
   '</select></label>'
  ).join("");
 }
-const avatarGrab='<div><dt>Grab · 1 action</dt><dd>After a successful Strike with this attack, attempt to Grapple using the same appendage. The attempt ignores and does not increase your multiple attack penalty. You can also use Grab to extend a Grabbed or Restrained condition already maintained with that appendage until the end of your next turn.</dd></div>';
-const avatarAttackTraits=[
- ["agile","Agile","Multiple attack penalty is –4 on the second attack and –8 on later attacks."],
- ["nonlethal","Nonlethal","The attack normally knocks a creature out. Taking a –2 circumstance penalty lets you make it lethal."],
- ["trip","Trip","Trip with Athletics using the attack’s reach, even without a free hand."],
- ["versatile","Versatile","Choose the normal damage type or one of the listed alternatives each time you attack."],
- ["deadly","Deadly 3d10","On a critical hit, add 3d10 after doubling the Strike damage."]
-];
-function avatarTraits(a){
- const attacks=a[7]+" "+a[8];
- const rules=avatarAttackTraits.filter(([key])=>attacks.includes(key)).map(([,label,rule])=>'<dd><strong>'+label+'</strong> · '+rule+'</dd>');
- const fatal=attacks.match(/fatal (d\d+)/);
- if(fatal)rules.push('<dd><strong>Fatal '+fatal[1]+'</strong> · On a critical hit, change the attack’s damage dice to '+fatal[1]+' and add one extra '+fatal[1]+' after doubling.</dd>');
- return rules.length?'<div><dt>Attack traits</dt>'+rules.join("")+'</div>':"";
-}
 function avHTML(a,open){
  return '<details class="av"'+(open?' open':'')+'><summary>Avatar · '+esc(a[5])+'</summary><dl>'+
   '<div><dt>Speeds and movement effects</dt><dd>'+esc(a[6])+'</dd></div>'+
   '<div><dt>Melee Strike · 1 action</dt><dd>'+esc(a[7])+'</dd></div>'+
   (a[8]?'<div><dt>Ranged Strike · 1 action</dt><dd>'+esc(a[8])+'</dd></div>':'')+
-  (a[7].includes("plus Grab")?avatarGrab:'')+avatarTraits(a)+
-  '<div><dt>Shared battle form</dt><dd>Rank 10 · 2 actions · 1 minute · concentrate, manipulate, polymorph. Supreme Incarnation (level 19) uses the rank-10 apparition slot and takes a primary apparition’s form. With Dual Invocation, choose either primary when casting.</dd>'+
-  '<dd>Huge (requires room to expand) · AC 25 + level (ignore armor check penalty and Speed reduction) · 30 temporary HP · darkvision · Athletics +35 or your own modifier if higher.</dd>'+
-  '<dd>Only the listed Strikes are available. They are magical and trained, using +33 to hit. Melee uses Strength unless finesse applies, and ranged uses Dexterity. Listed Speeds replace yours.</dd>'+
-  '<dd>You have hands, can take manipulate actions, and can Dismiss. The battle form otherwise prevents spellcasting, speech and item activation. Gear is absorbed and constant abilities continue. Only circumstance and status bonuses and penalties can adjust the form’s special statistics.</dd>'+
+  '<div><dt>Avatar spell</dt><dd>'+
+  '<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p>'+
+  "<p>You gain the following statistics and abilities regardless of which deity's battle form you assume:</p>"+
+  "<ul><li>AC = 25 + your level. Ignore your armor's check penalty and Speed reduction.</li>"+
+  '<li>30 temporary Hit Points.</li><li>Darkvision.</li>'+
+  "<li>One or more attacks specific to your deity's battle form, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks are Dexterity based.</li>"+
+  '<li>Athletics modifier of +35, unless your own is higher.</li></ul></dd>'+
   '<dd><a href="https://2e.aonprd.com/Spells.aspx?ID=1446" target="_blank" rel="noopener">Avatar rules ↗</a> · <a href="https://2e.aonprd.com/Apparitions.aspx?ID='+AU[a[0]]+'" target="_blank" rel="noopener">Apparition rules ↗</a></dd></div></dl></details>';
 }
 
